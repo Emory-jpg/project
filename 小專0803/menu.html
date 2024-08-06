@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .bodyall {
+        display: flex;
+      }
+      .body-left {
+        flex: 2;
+        /* border: 2px solid black; */
+      }
+      .body-right {
+        flex: 6;
+        /* border: 2px solid black; */
+      }
+      .listall {
+        border: 2px solid rgb(230, 92, 0);
+      }
+      .list1 {
+        list-style-type: none;
+        border-bottom: 2px solid rgb(230, 92, 0);
+      }
+      .list2 {
+        display: flex;
+        /* border: 2px solid black; */
+      }
+      .list-content {
+        flex: 1;
+      }
+      .list-img {
+        flex: 1;
+      }
+      .pizzatitle {
+        color: rgb(230, 92, 0);
+        font-family: "Kanit", Courier, monospace;
+        font-weight: 900;
+        font-size: 30px;
+        /* border: 2px solid black; */
+      }
+      .pizzadescription {
+        color: rgb(230, 92, 0);
+        font-family: "Kanit", Courier, monospace;
+        font-weight: 900;
+        font-size: 15px;
+        /* border: 2px solid black; */
+      }
+      .pizzaprice {
+        color: rgb(230, 92, 0);
+        font-family: "Kanit", Courier, monospace;
+        font-weight: 800;
+        font-size: 20px;
+        /* border: 2px solid black; */
+      }
+      .pizzaimg {
+        height: 250px;
+      }
+      @media screen and (max-width: 768px) {
+        .pizzatitle {
+          font-size: 20px;
+        }
+        .pizzadescription {
+          font-size: 12px;
+        }
+        .pizzaprice {
+          font-size: 15px;
+        }
+
+        .pizzaimg {
+          height: 200px;
+          margin-top: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bodyall">
+      <div class="body-left">
+        <a href="./index0803.html">
+          <button>關閉菜單</button>
+        </a>
+      </div>
+
+      <div class="body-right">
+        <ul class="listall">
+          <li class="list1">
+            <div class="list2">
+              <div class="list-content">
+                <p class="pizzatitle">瑪格麗特</p>
+                <p class="pizzadescription">
+                  Mozzarella起司、帕達諾起司、番茄、羅勒、紅醬
+                </p>
+                <p class="pizzaprice">$300 TWD (奶素)</p>
+              </div>
+              <div class="list-img">
+                <img
+                  src="./image/皇后瑪格2021.png"
+                  alt="圖片烙跑了..."
+                  class="pizzaimg"
+                />
+              </div>
+            </div>
+          </li>
+          <li class="list1">
+            <div class="list2">
+              <div class="list-content">
+                <p class="pizzatitle">松露野菇</p>
+                <p class="pizzadescription">
+                  松露野菇、洋蔥、綜合菇、松露油、奶油白醬
+                </p>
+                <p class="pizzaprice">$300 TWD (可蛋奶素)</p>
+              </div>
+              <div class="list-img">
+                <img
+                  src="./image/松霧野菇886X554.png"
+                  alt="圖片烙跑了..."
+                  class="pizzaimg"
+                />
+              </div>
+            </div>
+          </li>
+          <li class="list1">
+            <div class="list2">
+              <div class="list-content">
+                <p class="pizzatitle">蜂蜜起司</p>
+                <p class="pizzadescription">
+                  藍紋起司、Mozzarella起司、帕達諾起司、杏仁片
+                </p>
+                <p class="pizzaprice">$300 TWD (奶素)</p>
+              </div>
+              <div class="list-img">
+                <img
+                  src="./image/蜂蜜起司886X554.png"
+                  alt="圖片烙跑了..."
+                  class="pizzaimg"
+                />
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

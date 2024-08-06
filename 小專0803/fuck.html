@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouse Follow Icon</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        overflow: scroll;
+      }
+
+      #follow-icon {
+        position: absolute;
+        pointer-events: none; /* 確保不干擾滑鼠事件 */
+        transition: transform 0.1s ease-out; /* 平滑跟隨效果 */
+      }
+
+      #follow-icon img {
+        width: 40px; /* 圖標的大小 */
+        height: 40px; /* 圖標的大小 */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="follow-icon">
+      <img src="https://via.placeholder.com/40" alt="Follow Icon" />
+      <!-- 替換為你的圖標 -->
+    </div>
+
+    <script>
+      document.addEventListener("mousemove", function (event) {
+        const followIcon = document.getElementById("follow-icon");
+        const x = event.clientX;
+        const y = event.clientY;
+        followIcon.style.transform = `translate(${x}px, ${y}px)`;
+      });
+    </script>
+  </body>
+</html>

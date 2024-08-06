@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="myinput" />
+    <button onclick="tv()" style="height: 50px; width: 100px">按我</button>
+    <h6>這是一個轉台按鈕，你可以輸入25、30、65、28看看 嘿嘿</h6>
+    <h2 id="channelName"></h2>
+    <script>
+      var x = prompt("輸入通關密碼:");
+      while (x != 1234) {
+        alert("答錯了你是笨蛋嗎?");
+        x = prompt("再他媽用腦想想:");
+      }
+      alert("終於答對了 你好棒! 拍拍手");
+
+      function tv() {
+        var b = document.getElementById("myinput").value;
+        var a = document.getElementById("channelName");
+        if (b == 25) {
+          a.innerText = "東森幼幼台";
+        } else if (b == 30) {
+          a.innerText = "三立電視台";
+        } else if (b == 65) {
+          a.innerText = "HBO";
+        } else if (b == 28) {
+          a.innerText = "這台是啥? 八大電視台?";
+        } else {
+          a.innerText = "想不到還有啥了哈哈";
+        }
+      }
+    </script>
+  </body>
+</html>

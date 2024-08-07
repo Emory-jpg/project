@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>True Pizza 線上訂位</title>
+    <style>
+      body {
+        background-color: rgb(230, 92, 0);
+      }
+      .footerlogo {
+        color: white;
+        font-family: "bauhaus 93", Courier, monospace;
+        font-size: 100px;
+        text-align: center;
+        padding-top: 20px;
+        /* border: 2px solid rgb(255, 255, 255); */
+      }
+      .form {
+        display: flex;
+        background-color: #ffffff;
+        border-radius: 30px;
+        padding: 20px;
+        
+    }
+      .formleft {
+        flex: 1;
+        text-align: center;
+        margin-top: 5px;
+      }
+      .formright {
+        flex: 2;
+        /* border: 2px solid black; */
+      }
+
+      .formleft>label {
+        font-family: "微軟正黑體";
+        font-weight: 900;
+        font-size: 20px;
+        color: rgb(230, 92, 0);
+        display: block;
+        margin-bottom: 30px;
+       
+        }
+
+      .formright > div > label {
+        font-family: "微軟正黑體";
+        font-weight: 900;
+        font-size: 15px;
+        color: rgb(230, 92, 0);
+      }
+      .inputbox {
+        font-family: "微軟正黑體";
+        font-weight: 900;
+        font-size: 15px;
+        color: rgb(230, 92, 0);
+        border: none;
+        border-bottom: 3px solid rgb(230, 92, 0);
+        border-radius: 10px 10px 0 0;
+        background-color: rgb(245, 236, 231);
+        padding: 15px;
+        width: 500px;
+        margin-bottom: 30px;
+      }
+      .submitbtn{
+        position: relative;
+        left: 45%;
+        width: 100px;
+        height: 80px;       
+        background-color: antiquewhite;
+        border: 2px solid (230, 92, 0);
+        border-radius: 10px;
+    }
+    .submitbtn>h1{
+        /* border: 2px solid rgb(0, 0, 0); */
+        text-align: center;
+        padding-top: 15px;
+        color:  rgb(230, 92, 0);
+        font-family: "微軟正黑體";
+        font-weight: 900;
+        font-size: 30px;
+    }
+   
+    </style>
+  </head>
+  <body>
+    <div>
+      <div>
+        <div>
+          <h1 class="footerlogo">Ture Pizza</h1>
+        </div>
+      
+      <div class="form">
+        <div class="formleft">
+          <label for="name">姓名</label>
+          <br />
+          <label for="gender">稱呼</label>
+          <br />
+          <label for="phone">電話</label>
+          <br />
+          <label for="booktime">訂位日期</label>
+          <br />
+          <label for="bookpeople">用餐人數</label>
+          <br />
+          <label for="memo">備註</label>
+        </div>
+
+        <div class="formright">
+          <input class="inputbox" id="name" type="text" required />
+          <br />
+          <div class="inputcontent">
+            <input id="female" type="radio" name="gender" required />
+            <label for="female">小姐</label>
+
+            <input id="male" type="radio" name="gender" />
+            <label for="male">先生</label>
+
+            <input id="other" type="radio" name="gender" />
+            <label for="other">同學</label>
+          </div>
+          <br />
+          <input class="inputbox" id="name" type="text" min="10" required />
+          <input class="inputbox" type="date" required />
+          <input
+            class="inputbox"
+            type="number"
+            minlength="1"
+            maxlength="15"
+            required
+          />
+          <textarea
+            class="inputbox"
+            name="memo"
+            id="memo"
+            placeholder="如有需要備註，請在此輸入"
+          ></textarea>
+        </div>
+    </div>
+    <a  type="submit"><div class="submitbtn"><h1 >提交</h1></div></a>
+    </div>
+  </body>
+</html>

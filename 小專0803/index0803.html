@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>好好吃披薩</title>
+    <title>好好初披薩</title>
     <link rel="stylesheet" href="./BS/_css/bootstrap.css" />
     <link rel="stylesheet" href="./index 0803.css" />
     <link rel="stylesheet" href="./loading.css" />
@@ -22,9 +22,9 @@
     </div>
     <!-- 鼠標 -->
     <header>
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#">Ture Pizza</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -36,13 +36,16 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav text-">
               <li class="nav-item">
-                <a class="nav-link" href="#m2">關於好好吃</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link" href="./menu.html">看菜單</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#store">門市據點</a>
+                <a class="nav-link" href="#m2">關於初披薩</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#store">店內環境</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#address">門市據點</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">我要訂位!</a>
@@ -68,8 +71,16 @@
       <div class="marquee-container fixed-bottom">
         <div class="marquee">
           <p>
-            我快累死了靠杯!我快累死了靠杯!我快累死了靠杯!我快累死了靠杯!我快累死了靠杯!我快累死了靠杯!我快累死了靠杯!我快累死了靠杯!我快累死了靠杯!我快累死了靠杯!
-          </p>
+            地址 : 台中市南屯區公益路二段51號。電話 : 02-1234-5678。營業時間 : 10AM - 10PM。地址 : 台中市南屯區公益路二段51號。電話 : 02-1234-5678。營業時間 : 10AM - 10PM。
+            地址 : 台中市南屯區公益路二段51號。電話 : 02-1234-5678。營業時間 : 10AM - 10PM。
+            地址 : 台中市南屯區公益路二段51號。電話 : 02-1234-5678。營業時間 : 10AM - 10PM。
+            地址 : 台中市南屯區公益路二段51號。電話 : 02-1234-5678。營業時間 : 10AM - 10PM。
+            地址 : 台中市南屯區公益路二段51號。電話 : 02-1234-5678。營業時間 : 10AM - 10PM。
+            地址 : 台中市南屯區公益路二段51號。電話 : 02-1234-5678。營業時間 : 10AM - 10PM。
+            地址 : 台中市南屯區公益路二段51號。電話 : 02-1234-5678。營業時間 : 10AM - 10PM。
+            地址 : 台中市南屯區公益路二段51號。電話 : 02-1234-5678。營業時間 : 10AM - 10PM。
+            地址 : 台中市南屯區公益路二段51號。電話 : 02-1234-5678。營業時間 : 10AM - 10PM。
+            </p>
         </div>
       </div>
       <!-- 跑馬字串 -->
@@ -117,11 +128,7 @@
         /> -->
       </div>
     </main>
-    <main>
-      <h3>menu</h3>
-      <button>123</button>
-      <img src="./image/Goat-Cheese-Pizza-013.jpg" style="height: 100px" />
-    </main>
+    
 
     <main>
       <div>
@@ -130,7 +137,7 @@
         </h1>
       </div>
       <!-- 店內環境輪播圖 -->
-      <div class="carousel-container">
+      <div class="carousel-container" id="carousel">
         <div id="store-carousel" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button
@@ -226,9 +233,37 @@
       </div>
       <!-- 店內環境輪播圖 -->
     </main>
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <div>
+      <h1 class="store-title menutext ld ld-jump" id="address">
+        &#129063; (門市據點) &#129063;
+      </h1>
+      <section class="locationbg">
+      <div class="location">
+        <div class="locationleft">
+          <ul class="opencontent">
+            <li class="openitem">地址 </li>
+            <li class="opentext">台中市南屯區公益路二段51號</li>
+            <li class="openitem">電話</li>
+            <li class="opentext">02-1234-5678</li>
+            <li class="openitem">營業時間</li>
+            <li class="opentext">10AM - 10PM</li>
+            <li class="openitem">休息日</li>
+            <li class="opentext">每周一</li>
+          </ul>
+        </div>
+        <div class="locationright">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d371.7772891466586!2d120.6509453927833!3d24.150596113627074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d965044b79f%3A0x12b6ec1eaab952ce!2zNDA45Y-w5Lit5biC5Y2X5bGv5Y2A5YWs55uK6Lev5LqM5q61NTHomZ8xNSDmqJM!5e0!3m2!1szh-TW!2stw!4v1723001206553!5m2!1szh-TW!2stw" class="map"  ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+    <footer >
+      <div>
+        <h1 class="footerlogo">Ture Pizza</h1>
+      </div>
+
+    </footer>
+    
     <script>
       //鼠標icon
       document.addEventListener("mousemove", function (event) {
@@ -238,6 +273,21 @@
         followIcon.style.transform = `translate(${x}px, ${y}px)`;
       });
       //鼠標icon
+      // Go to Top 圖示顏色變化
+      document.addEventListener('scroll', function() {
+        var gototop = document.querySelector('.gototop');
+        var footer = document.querySelector('footer');
+
+        var gototopRect = gototop.getBoundingClientRect();
+        var footerRect = footer.getBoundingClientRect();
+
+        // 檢查 'Go to Top' 圖示是否接觸到 footer
+        if (gototopRect.bottom > footerRect.top) {
+          gototop.style.color = "white";
+        } else {
+          gototop.style.color = "rgb(230, 92, 0)";
+          }
+      });
     </script>
   </body>
 </html>

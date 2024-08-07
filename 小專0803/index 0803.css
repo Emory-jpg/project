@@ -41,11 +41,11 @@
   display: inline-block;
   /* padding-left: 100%; */
   font-family: 微軟正黑體;
-  font-weight: 800;
-  font-size: 80px;
+  font-weight: 900;
+  font-size: 120px;
   color: rgb(230, 92, 0);
   padding-top: 12px;
-
+  /* border: 5px solid rgb(230, 92, 0); */
   animation: marquee 200s linear infinite;
 }
 /* 跑馬字串上 */
@@ -73,7 +73,7 @@
   font-size: 18px;
   color: rgb(230, 92, 0);
   padding-top: 12px;
-  animation: marquee 18s linear infinite;
+  animation: marquee 100s linear infinite;
 }
 /* 跑馬字串下 */
 @keyframes marquee {
@@ -110,8 +110,10 @@
 }
 /* 鼠標icon */
 body {
+  margin-top: 100px;
   background-color: #f5f3ee;
 }
+
 .navbar {
   padding: 10px 0px 30px 50px;
   /* border: 20px dashed rgb(230, 92, 0); */
@@ -295,7 +297,7 @@ body {
 } */
 .store-title {
   position: relative;
-  top: 880px;
+  top: 1080px;
 }
 .carousel-container {
   display: flex;
@@ -305,7 +307,7 @@ body {
   margin: 0; /* 清除默认的 margin */
 }
 #store-carousel {
-  margin-top: 500px;
+  margin-top: 800px;
 }
 .store-item {
   width: 60vw;
@@ -315,4 +317,66 @@ body {
 .store-img {
   height: 100%;
   object-fit: cover;
+}
+.location {
+  display: flex;
+  margin-top: 600px;
+  height: 800px;
+  /* border: 2px solid black; */
+  border-radius: 30px 30px 0 0;
+  /* background-color: rgb(230, 92, 0); */
+}
+.locationleft {
+  border-top: 2px solid rgb(230, 92, 0);
+  border-right: 2px solid rgb(230, 92, 0);
+  flex: 1;
+}
+.locationright {
+  border-top: 2px solid rgb(230, 92, 0);
+  flex: 1;
+}
+.opencontent {
+  margin-top: 150px;
+  list-style-type: none;
+}
+.opencontent > li {
+  color: rgb(230, 92, 0);
+  font-family: 微軟正黑體;
+  text-align: center;
+}
+.map {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+.openitem {
+  font-weight: 900;
+  margin-top: 60px;
+  font-size: 20px;
+}
+.opentext {
+  margin: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.locationbg {
+  background-color: rgb(230, 92, 0);
+}
+.location {
+  /* border: 2px solid rgb(230, 92, 0); */
+  border-radius: 0 0 100px 100px;
+  background-color: #f5f3ee;
+  overflow: hidden;
+}
+footer {
+  height: 800px;
+  background-color: rgb(230, 92, 0);
+}
+.footerlogo {
+  color: #f5f3ee;
+  font-family: "bauhaus 93", Courier, monospace;
+  font-size: 200px;
+  text-align: center;
+  padding-top: 200px;
+  /* border: 2px solid rgb(255, 255, 255); */
 }

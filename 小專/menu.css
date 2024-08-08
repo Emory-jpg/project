@@ -4,8 +4,11 @@ body {
 /* 鼠標icon */
 #follow-icon {
   position: fixed;
+  top: 30px;
+  left: 30px;
   pointer-events: none; /* 確保不干擾滑鼠事件 */
   transition: transform 0.8s ease-out; /* 平滑跟隨效果 */
+  z-index: -1;
 }
 
 #follow-icon > img {
@@ -134,22 +137,6 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .pizzatitle {
-    font-size: 20px;
-  }
-  .pizzadescription {
-    font-size: 12px;
-  }
-  .pizzaprice {
-    font-size: 15px;
-  }
-
-  .pizzaimg {
-    height: 200px;
-    margin-top: 20px;
-  }
-}
 /* 跑馬字串 */
 .marquee-container {
   position: fixed;
@@ -182,7 +169,7 @@ body {
   color: rgb(255, 206, 173);
   padding-top: 12px;
   /* border: 5px solid rgb(230, 92, 0); */
-  animation: marquee 150s linear infinite;
+  animation: marquee 300s linear infinite;
 }
 @keyframes marquee {
   0% {
@@ -194,3 +181,135 @@ body {
 }
 
 /* 跑馬字串 */
+
+@media (max-width: 1800px) {
+  .marquee > p {
+    display: inline-block;
+    /* padding-left: 100%; */
+    font-family: 微軟正黑體;
+    font-weight: 900;
+    font-size: 80px;
+    color: rgb(255, 206, 173);
+    margin-top: 150px;
+    /* border: 5px solid rgb(230, 92, 0); */
+    animation: marquee 300s linear infinite;
+  }
+}
+@media (max-width: 1450px) {
+  .marquee {
+    border: none;
+  }
+  .marquee > p {
+    display: inline-block;
+    /* padding-left: 100%; */
+    font-family: 微軟正黑體;
+    font-weight: 900;
+    font-size: 80px;
+    color: rgb(255, 206, 173);
+    margin-top: 150px;
+    /* border: 5px solid rgb(230, 92, 0); */
+    animation: marquee 300s linear infinite;
+  }
+  .pizzaimg {
+    height: 150px;
+    margin-top: 20px;
+    margin-left: 80px;
+  }
+}
+@media (max-width: 1200px) {
+  .marquee {
+    border: none;
+  }
+  .marquee > p {
+    display: inline-block;
+    /* padding-left: 100%; */
+    font-family: 微軟正黑體;
+    font-weight: 900;
+    font-size: 80px;
+    color: rgb(255, 206, 173);
+    margin-top: 100px;
+    /* border: 5px solid rgb(230, 92, 0); */
+    animation: marquee 300s linear infinite;
+  }
+  .pizzaimg {
+    height: 150px;
+    margin-top: 20px;
+    margin-left: 80px;
+  }
+}
+@media (max-width: 992px) {
+  .marquee {
+    border: none;
+  }
+  .marquee > p {
+    display: inline-block;
+    /* padding-left: 100%; */
+    font-family: 微軟正黑體;
+    font-weight: 800;
+    font-size: 60px;
+    color: rgb(255, 206, 173);
+    margin-top: 50px;
+    /* border: 5px solid rgb(230, 92, 0); */
+    animation: marquee 250s linear infinite;
+  }
+  .pizzaimg {
+    height: 150px;
+    margin-top: 20px;
+    margin-left: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .marquee {
+    border: none;
+  }
+  .marquee > p {
+    display: inline-block;
+    /* padding-left: 100%; */
+    font-family: 微軟正黑體;
+    font-weight: 800;
+    font-size: 60px;
+    color: rgb(255, 206, 173);
+    margin-top: 50px;
+    /* border: 5px solid rgb(230, 92, 0); */
+    animation: marquee 250s linear infinite;
+  }
+  .pizzatitle {
+    font-size: 25px;
+  }
+  .pizzaimg {
+    height: 120px;
+    margin-top: 50px;
+    margin-left: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .marquee {
+    transform: translateX(0%);
+  }
+  .marquee > p {
+    display: inline-block;
+    /* padding-left: 100%; */
+    font-family: 微軟正黑體;
+    font-weight: 800;
+    font-size: 50px;
+    color: rgb(255, 206, 173);
+    margin-top: 20px;
+    /* border: 5px solid rgb(230, 92, 0); */
+    animation: marquee 200s linear infinite;
+  }
+  .pizzatitle {
+    font-size: 20px;
+  }
+  .pizzadescription {
+    font-size: 15px;
+  }
+  .pizzaprice {
+    font-size: 18px;
+  }
+  .pizzaimg {
+    height: 90px;
+    margin-top: 50px;
+    margin-left: 30px;
+  }
+}

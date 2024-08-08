@@ -84,6 +84,7 @@
     transform: translateX(-100%);
   }
 }
+/* 跑馬字串下 */
 
 @keyframes HOT {
   0% {
@@ -100,6 +101,8 @@
 /* 鼠標icon */
 #follow-icon {
   position: fixed;
+  top: 30px;
+  left: 30px;
   pointer-events: none; /* 確保不干擾滑鼠事件 */
   transition: transform 0.8s ease-out; /* 平滑跟隨效果 */
 }
@@ -131,8 +134,11 @@ body {
   font-size: 50px;
 }
 .navbar-brand:hover {
-  color: rgb(0, 182, 106);
+  color: rgb(255, 212, 18);
   font-weight: bolder;
+}
+.nav-brand:visited {
+  color: rgb(230, 92, 0);
 }
 .nav-item {
   margin-right: 40px;
@@ -198,7 +204,7 @@ body {
 }
 .first:hover {
   /* border: 20px dotted rgb(255, 217, 0); */
-  box-shadow: 0px 0px 0px 25px rgb(255, 237, 133);
+  box-shadow: 0px 0px 0px 30px rgb(255, 237, 133);
 }
 
 /* 實驗 */
@@ -230,6 +236,7 @@ body {
   margin-top: 200px;
   border: 2px solid blac;
   display: flex;
+  flex-direction: row;
   visibility: hidden;
 }
 
@@ -371,12 +378,132 @@ body {
 footer {
   height: 800px;
   background-color: rgb(230, 92, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footericon {
+  margin-top: 100px;
+}
+.footericon > a {
+  margin-right: 50px;
 }
 .footerlogo {
   color: #f5f3ee;
   font-family: "bauhaus 93", Courier, monospace;
   font-size: 200px;
   text-align: center;
-  padding-top: 200px;
+  padding-top: 180px;
   /* border: 2px solid rgb(255, 255, 255); */
+}
+
+@media (max-width: 992px) {
+  .marquee2 > p {
+    font-size: 80px;
+    animation: marquee 180s linear infinite;
+  }
+  .menutext {
+    font-size: 35px;
+    /* border: 2px solid black; */
+  }
+  .m2-title {
+    padding-top: 30px;
+    font-family: 微軟正黑體;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    text-wrap: nowrap;
+    /* border: 2px solid black; */
+  }
+  .m2-left > .abouttitle {
+    font-size: 30px;
+  }
+  .m2-left > .aboutcontent {
+    font-size: 20px;
+  }
+  .footerlogo {
+    color: #f5f3ee;
+    font-family: "bauhaus 93", Courier, monospace;
+    font-size: 160px;
+    text-align: center;
+    padding-top: 80px;
+    /* border: 2px solid rgb(255, 255, 255); */
+  }
+  .marquee {
+    border: 3px solid rgb(230, 92, 0); /* 邊框樣式可選 */
+  }
+
+  .marquee > p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 880px) {
+  .marquee2 > p {
+    font-size: 80px;
+    animation: marquee 180s linear infinite;
+  }
+  .menutext {
+    font-size: 35px;
+    /* border: 2px solid black; */
+  }
+  .m2:hover {
+    border: 15px dotted rgb(255, 217, 0);
+    height: 800px;
+  }
+  .m2-left > .abouttitle {
+    font-size: 26px;
+  }
+  .m2-left > .aboutcontent {
+    font-size: 16px;
+  }
+  .m2-right > img {
+    width: 360px;
+  }
+  .openitem {
+    font-weight: 900;
+    margin-top: 60px;
+    font-size: 18px;
+  }
+  .footerlogo {
+    font-size: 120px;
+    padding-top: 30px;
+  }
+}
+@media (max-width: 880px) {
+  .m2-left > .abouttitle {
+    font-size: 26px;
+  }
+  .m2-left > .aboutcontent {
+    font-size: 15px;
+  }
+  .m2-left {
+    flex: 3;
+  }
+  .m2-right {
+    flex: 1;
+  }
+}
+@media (max-width: 768px) {
+  .m2-right {
+    display: none;
+  }
+}
+@media (max-width: 550px) {
+  .m2-right {
+    display: none;
+  }
+  .firsth1 {
+    font-family: "Kanit", Courier, monospace;
+    font-weight: 900;
+    font-size: 60px;
+    padding-top: 55px;
+    text-align: center;
+  }
+  .menutext {
+    font-size: 30px;
+    /* border: 2px solid black; */
+  }
 }

@@ -10,7 +10,7 @@
   
   </head>
   <body>
-    <a class="closebtn" href="./index0803.html">
+    <a class="closebtn" href="./index0808.html">
       <div class="closediv"><h1 class="closex">X</h1></div>
     </a>
     <!-- 鼠標 -->
@@ -48,6 +48,32 @@
           <label for="booktime">訂位日期</label>
           <input class="inputbox" type="date" id="booktime"  min="" required />
           
+          <label for="time">用餐時間</label>
+          <select name="time" id="time" class="timeselection inputbox" required>
+            <option class="timeselection" value="10am">10:00</option>
+            <option class="timeselection" value="10.5am">10:30</option>
+            <option value="11am">11:00</option>
+            <option value="11.5am">11:30</option>
+            <option value="12pm">12:00</option>
+            <option value="12.5pm">12:30</option>
+            <option value="1pm">13:00</option>
+            <option value="1.5pm">13:30</option>
+            <option value="2pm">14:00</option>
+            <option value="2.5pm">14:30</option>
+            <option value="3pm">15:00</option>
+            <option value="3.5pm">15:30</option>
+            <option value="4pm">16:00</option>
+            <option value="4.5pm">16:30</option>
+            <option value="5pm">17:00</option>
+            <option value="5.5pm">17:30</option>
+            <option value="6pm">18:00</option>
+            <option value="6.5pm">18:30</option>
+            <option value="7pm">19:00</option>
+            <option value="7.5pm">19:30</option>
+            <option value="8pm">20:00</option>
+            <option value="8.5pm">20:30</option>
+            <option value="9pm">21:00</option>
+          </select>
 
           <label for="bookpeople">用餐人數</label>
           <select name="people" id="bookpeople" class="inputbox" required>
@@ -148,7 +174,7 @@
         alert("您的訂位已提交!! **請留意手機簡訊確認是否訂位成功**");
         this.reset();
         setTimeout(function() {
-          document.location.href="./index0803.html"
+          document.location.href="./index0808.html"
         }, 1000);
       })
 
